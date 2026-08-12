@@ -138,17 +138,3 @@ docs/     superpowers/specs/…-design.md   (full design rationale)
           superpowers/plans/…-plan.md     (task-by-task build plan)
 ```
 
-## Testing
-
-`tests/` uses a small hand-rolled assert harness (`test_harness.h`) — no
-framework to install. `make test` builds and runs all six suites. The Makefile
-links the test runner against every `src/*.o` **except** `main.o` (the runner
-has its own `main()`). Tests run in `--no-color` mode so golden-output
-comparison isn't fighting escape codes.
-
-## Out of scope (v1)
-
-Directed edges, decimal weights, a force-directed layout, label-collision
-avoidance, in-app graph editing, and the SFML renderer. See
-`docs/superpowers/specs/2026-08-10-graph-dijkstra-visualizer-design.md` for the
-full design and rationale.
