@@ -1,0 +1,15 @@
+# Sample weighted graph. Cheapest A -> D is A-B-D at cost 6.
+N A
+N B
+N C
+N D
+N E
+N F
+
+E A B 4
+E A C 8
+E B D 2
+E C D 3
+E A E 1
+E B E 3
+E D E 4
